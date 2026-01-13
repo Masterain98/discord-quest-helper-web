@@ -7,14 +7,14 @@
 
     <!-- SEO Meta Tags -->
     <title>Discord Quest Helper - 自动完成视频、直播和游戏任务</title>
-    <meta name="description" content="一款 Windows 桌面应用程序，可自动完成 Discord 任务 - 支持视频、直播和游戏任务。一键自动化获取 Discord 奖励。">
+    <meta name="description" content="一款 Windows 和 macOS 桌面应用程序，可自动完成 Discord 任务 - 支持视频、直播和游戏任务。一键自动化获取 Discord 奖励。">
     <meta name="keywords" content="Discord, 任务, 助手, 自动化, 游戏, 视频, 直播, Windows, 桌面, 应用">
     <meta name="author" content="DGP-Studio">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Discord Quest Helper - Discord 任务助手">
-    <meta property="og:description" content="一键自动完成 Discord 视频、直播和游戏任务。免费开源的 Windows 桌面应用。">
+    <meta property="og:description" content="一键自动完成 Discord 视频、直播和游戏任务。免费开源的 Windows 和 macOS 桌面应用。">
     <meta property="og:image" content="../images/og.webp">
     <meta property="og:url" content="https://github.com/Masterain98/discord-quest-helper">
 
@@ -256,10 +256,13 @@
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3 class="step-title">下载并运行</h3>
-                        <p class="step-desc">下载<a
+                        <p class="step-desc">
+                            <strong>Windows:</strong> 下载<a
                                 href="https://github.com/Masterain98/discord-quest-helper/releases/latest"
                                 target="_blank">最新版本</a>，解压 <code>.zip</code> 文件，然后运行
-                            <code>Discord Quest Helper.exe</code>。
+                            <code>Discord Quest Helper.exe</code>。<br><br>
+                            <strong>macOS:</strong> 下载 <code>.dmg</code> 文件，将应用拖到应用程序文件夹，然后在终端中运行：
+                            <code>xattr -cr /Applications/Discord\ Quest\ Helper.app</code>
                         </p>
                     </div>
                 </div>
@@ -474,7 +477,10 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>目前，应用程序仅支持 Windows。Token 提取依赖 Windows Data Protection API (DPAPI) 进行解密。跨平台支持可能会在未来版本中考虑。</p>
+                        <p><strong>macOS (Apple Silicon):</strong> 已支持！从发布页面下载 <code>.dmg</code> 文件。安装后，在终端中运行
+                            <code>xattr -cr /Applications/Discord\ Quest\ Helper.app</code> 以移除隔离属性。<br><br>
+                            <strong>Linux:</strong> 目前不支持。未来版本可能会考虑 Linux 支持。
+                        </p>
                     </div>
                 </div>
                 <div class="faq-item">
