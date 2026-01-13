@@ -359,6 +359,50 @@ code {
     line-height: 1.7;
 }
 
+/* Platform Icons */
+.platform-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.platform-label {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.platform-list {
+    display: flex;
+    gap: 20px;
+}
+
+.platform-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.platform-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.platform-item:hover .platform-icon {
+    opacity: 1;
+}
+
+.platform-item:hover {
+    color: var(--text-primary);
+}
+
 .hero-buttons {
     display: flex;
     gap: 16px;
@@ -501,6 +545,12 @@ section {
 .feature-icon {
     font-size: 2.5rem;
     margin-bottom: 20px;
+}
+
+.feature-icon-img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1) brightness(2);
 }
 
 .feature-title {
